@@ -37,4 +37,4 @@ jobs:
         bundle install --jobs 4 --retry 3
         bundle exec rails yarn:install db:setup assets:precompile
     - name: Exec tests
-      run: bundle exec rake
+      run: bundle exec rails test
